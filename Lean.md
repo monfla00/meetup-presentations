@@ -6,11 +6,11 @@ Lean development
 Agenda
 -------------------------------------------------------
 
-* inspirations
-* interview questions
-* cars / birds / statistics / switches
+* Inspirations
+* Interview Questions
+* Cars / Birds / Statistics / Switches
 * Continuous Delivery
-* interview answers
+* Interview Answers
 * Q / A
 
 ---
@@ -19,10 +19,10 @@ Some Inspirations
 -----------------------------------------------------
 
  * Lean Enterprise:
-![alt text](https://www.google.com.sg/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiCh_reqPjKAhWMGI4KHVHjDYAQjRwIBw&url=http%3A%2F%2Fitrevolution.com%2Fbook-review-lean-enterprise-how-high-performance-organizations-innovate-at-scale-jez-humble-joanne-molesky-barry-oreilly%2F&bvm=bv.114195076,d.c2E&psig=AFQjCNHmQmrkSCr4r9nAXXkbWFxwwsA0gQ&ust=1455575834441931 "Lean Enterprise")
+![Lean Enterprise](./leanenterprise.jpg)
 
 * The Phoenix Project:
-![alt text](https://www.google.com.sg/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjPzLDvqfjKAhVFjo4KHZV3CIIQjRwIBw&url=http%3A%2F%2Fwww.amazon.com%2FThe-Phoenix-Project-Helping-Business%2Fdp%2F0988262592&psig=AFQjCNE5pi6XCIiJgprHz-8YDjiXs1kkRg&ust=1455576150102554 "The Phoenix Project")
+![The Phoenix Project](./phoenixproject.jpg)
 
 
 ---
@@ -50,71 +50,117 @@ By following lean principles you will understand that this is the only way you w
 
 So where can I buy the tool? How much does it cost?
 
- --> It's not about the tool!
+ > It's never about the tool!
 
 ---
 
 Kata - Continuous Improvement
 ------------------------------
 
-![alt text](https://www.google.com.sg/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi37MaksPjKAhWTj44KHajsAM4QjRwIBw&url=http%3A%2F%2Fsageclarity.com%2Fidea-lab%2Fandon-system%2F&bvm=bv.114195076,d.c2E&psig=AFQjCNF9_xTgI0ybIXW-NKeurNzFlwA-Iw&ust=1455576353650663)
+![Andon Cord](./andoncord.png)
+
+> The Andon Cord
 
 ---
 
-Black swan theory
+Black Swan Theory
 -----------------------------------------------------
 
-![alt text](https://www.google.com.sg/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwj_-KT-sPjKAhWPG44KHewuBngQjRwIBw&url=http%3A%2F%2Fwww.birdimages.net%2Fbirds%2Fanatidae%2Fblack-swan&bvm=bv.114195076,d.c2E&psig=AFQjCNHGSBnSFsuoX7F6Z3mU89lfZxmXDg&ust=1455578016891429)
+![Black Swan Theory](./blackswan.jpg)
 
-Nassim Nicholas Taleb
+> Nassim Nicholas Taleb
 
 ---
 
-Statistics
+Simple Probability Theory
 -----------------------------------------------------
 
-make it more likely to hit the jackpot by iterating faster.
+Make it more likely to hit the jackpot by iterating faster.
+
+![Conquer The Odds](./adoptionchart.png)
 
 ---
 
 Continuous Delivery
 -----------------------------------------------------
 
-![alt text](https://www.google.com.sg/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiJ65PIsvjKAhULwo4KHQbuAZAQjRwIBw&url=http%3A%2F%2Fblog.pluralsight.com%2Ffavor-feature-toggles-over-feature-branches&psig=AFQjCNHXJ41SmzdgKj6I0CQ1alUZ9bZQ7w&ust=1455578443326945)
+![Feature Toggles](./featuretoggles.jpg)
 
-feature toggles and trunk based development --> Continuous integration
+Feature toggles and trunk based development --> Continuous Integration --> Continuous Delivery
 
 ---
 
-Analyze adoption
+Analyze Adoption
 ----------------------------------------------------
 
 Go through an iterative cycle to deliver incremental change to the customer (internal or external) and thoroughly analyze the adoption of the feature.
 
-    --> Further develop features that the customers like.
-    --> At the same time tweak or abandon features that the customers do not like.
+    > Further develop features that the customers like.
+
+    > At the same time tweak or abandon features that the customers do not like.
 
 
 It's all about customer value creation and satisfaction.  
 
 ---
 
-Delivery pipeline
+Delivery Pipeline
 -----------------------------------------------------
 
-commit --> build --> unit tests --> code style --> deploy --> integration tests --> performance tests --> exploratory manual testing
+![Delivery Pipeline](./deliverypipeline.png)
 
-    --> Visualize progress on each stage.
-    --> Establish quality gates at each stage.
-    --> Stop progress if a quality gate is not met!
+    > Visualize progress on each stage.
+    > Establish quality gates at each stage.
+    > Stop progress if a quality gate is not met!
 
+* honor the test pyramid!
 * reject or retain release candidates
+* why not build your build environment before building?
+* why not build your environment before deploying?
 
 ---
 
-Interview answers
+Continuous Delivery With Relational DBMSs
 -----------------------------------------------------
 
-go through questions and show that with lean development you are having an understanding of this.
+Yes, they are still in use...
+
+Problem statement: DB changes are rolled out manually by the developer or by an environment management team. Environments are in an inconsistent state.
+
+0. Explain why you do all this
+
+1. Properly source control any scripts
+2. Build tooling around database deployments (e.g. http://www.liquibase.org)
+3. Make deployments repeatable and idempotent (same code can be deployed to the environment multiple times with same result)
+4. Separate code from configuration
+5. Write DB unit test
+6. Integrate with CI tool of choice
+7. Write e2e integration tests
+8. Combine with data virtualization technology
+
+0. Explain why you do all this
+
+> and btw. did I mention it's not about the tool?
+
+---
+
+Interview Answers
+-----------------------------------------------------
+
+1. How do you deploy technology against a business strategy?
+
+2. How do you address the dynamic nature of our priorities which can be constantly changed or modified?
+
+3. Explain your decision making process when it comes to major technology investments
+
+4. How do you stay current in terms of knowledge & skills in the face of an ever changing technology landscape?
+
+---
+
+Q / A
+----------------------------------------------
+
+And when do you adopt Continuous Delivery & Lean Development?
+
 
 ---
