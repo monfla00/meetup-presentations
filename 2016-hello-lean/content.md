@@ -17,19 +17,19 @@ Agenda
 
 ---
 
-Some Inspirations
+Some Inspirations (1/2)
 -----------------------------------------------------
 
- * Lean Enterprise:
+
 ![Lean Enterprise](img/leanenterprise.jpg)
 
 
 --
 
-Some Inspirations
+Some Inspirations (2/2)
 -----------------------------------------------------
 
-* The Phoenix Project:
+
 ![The Phoenix Project](img/phoenixproject.jpg)
 
 
@@ -54,9 +54,11 @@ Engineering Leadership Interview Questions
 Why Lean Development?
 -----------------------------------------------------
 
-By following lean principles you will understand that this is the only way you will be able to deliver value to your clients in quality and time and give yourself a chance to innovate.
+By following lean principles you will come to realize that this is the only way you will be able to deliver value to your clients in quality and time and on top give yourself a chance to innovate.
+
 
 So where can I buy the tool? How much does it cost?
+
 
  > It's never about the tool!
 
@@ -73,10 +75,9 @@ Kata - Continuous Improvement
 
 Black Swan Theory
 -----------------------------------------------------
-
+> Nassim Nicholas Taleb
 ![Black Swan Theory](img/blackswan.jpg)
 
-> Nassim Nicholas Taleb
 
 ---
 
@@ -101,11 +102,14 @@ Feature toggles and trunk based development --> Continuous Integration --> Conti
 Analyze Adoption
 ----------------------------------------------------
 
-Go through an iterative cycle to deliver incremental change to the customer (internal or external) and thoroughly analyze the adoption of the feature.
+Go through an iterative cycle to deliver incremental changes to the customer (internal or external) and thoroughly analyze the adoption of the new feature.
 
-    > Further develop features that the customers like.
 
-    > At the same time tweak or abandon features that the customers do not like.
+> Further develop features that the customers like.
+
+
+> At the same time tweak or abandon features that the customers do not like.
+
 
 
 It's all about customer value creation and satisfaction.  
@@ -117,9 +121,9 @@ Delivery Pipeline
 
 ![Delivery Pipeline](img/deliverypipeline.png)
 
-    > Visualize progress on each stage.
-    > Establish quality gates at each stage.
-    > Stop progress if a quality gate is not met!
+> Visualize progress on each stage.
+> Establish quality gates at each stage.
+> Stop progress if a quality gate is not met!
 
 * honor the test pyramid!
 * reject or retain release candidates
@@ -132,12 +136,11 @@ CD With Relational DBMSs
 -----------------------------------------------------
 
 
-
 0. Explain why you do all this
 1. Properly source control any scripts
-2. Build tooling around database deployments (e.g. http://www.liquibase.org)
-3. Make deployments repeatable and idempotent (same code can be deployed to the environment multiple times with same result)
-4. Separate code from configuration
+2. Build tooling around database deployments
+3. Make deployments repeatable and idempotent
+4. Separate configuration from code
 5. Write DB unit test
 6. Integrate with CI tool of choice
 7. Write e2e integration tests
@@ -147,9 +150,8 @@ CD With Relational DBMSs
 
 > and btw. did I mention it's not about the tool?
 
-Note: 
- Yes, they are still in use...
- Problem statement: DB changes are rolled out manually by the developer or by an environment management team. Environments are in an inconsistent state.
+Note:
+ Yes, they are still in use... Often DB changes are rolled out manually by the developer or by an environment management team. Environments are in an inconsistent state.
 
 ---
 
@@ -157,12 +159,13 @@ Interview Answers
 -----------------------------------------------------
 
 1. How do you deploy technology against a business strategy?
-
+  > By applying lean principles
 2. How do you address the dynamic nature of our priorities which can be constantly changed or modified?
-
+  > By applying lean principles
 3. Explain your decision making process when it comes to major technology investments
-
+  > PoC technology applying lean principles
 4. How do you stay current in terms of knowledge & skills in the face of an ever changing technology landscape?
+  > By attending meetup presentations
 
 ---
 
