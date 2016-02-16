@@ -24,7 +24,7 @@ Some Inspirations
 ![Lean Enterprise](img/leanenterprise.jpg)
 
 
----
+--
 
 Some Inspirations
 -----------------------------------------------------
