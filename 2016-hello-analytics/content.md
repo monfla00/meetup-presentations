@@ -8,18 +8,20 @@ Why measure everything
 Agenda
 -------------------------------------------------------
 
-* Inspirations
-* Interview Questions
-* Cars / Birds / Statistics / Switches
-* Continuous Delivery
-* Interview Answers
+* Why do we want to measure everything?
+* Time series databases
+* Push vs Pull
+* Vanity metrics 
+* Correlation of events 
 * Q / A
 
 ---
 
 
-The Lean principles
+Lean principles
 -----------------------------------------------------
+
+
 
 1. The principles of Flow
 
@@ -38,23 +40,8 @@ Peter Drucker
 -----------------------------------------------------
 
 
-"What gets measured gets improved"
+*"What gets measured gets improved"*
 
-
----
-
-Why Lean Development?
------------------------------------------------------
-
-By following lean principles you will come to realize that this is the only way you will be able to deliver value to your clients in quality and time and on top give yourself a chance to innovate.
-
-
-So where can I buy the tool? How much does it cost?
-
-
- > It's never about the tool!
- 
- (source: )
 
 ---
 
@@ -66,6 +53,17 @@ telemetry stack
 > Monitoring framework
 
 (source: James Turnbull, the art of monitoring)
+
+---
+
+time series databases
+----------------------------------------------------
+
+A Time Series DBMS is a database management system that is optimized for handling time series data: each entry is associated with a timestamp.
+
+Examples of prominent time series databases are: OpenTSDB, InfluxDB, Prometheus, Graphite, ...
+Most of them are by design single node. (Although there is a clustered version of enterprise InfluxDB available)
+
 
 ---
 
@@ -82,7 +80,14 @@ Push based
 -----------------------------------------------------
 
 multi-dimensional data
-Telegraf --> InfluDB
+
+&nbsp;
+> InfluDB
+
+h2o_feet,location=coyote_creek water_level=8.120,level\ description="between 6 and 9 feet" 1439856000
+h2o_feet,location=coyote_creek water_level=8.005,level\ description="between 6 and 9 feet" 1439856360
+h2o_feet,location=coyote_creek water_level=7.887,level\ description="between 6 and 9 feet" 1439856720
+h2o_feet,location=coyote_creek water_level=7.762,level\ description="between 6 and 9 feet" 1439857080
 
 ---
 
@@ -90,28 +95,31 @@ Pull based
 -----------------------------------------------------
 
 multi-dimensional data
-Prometheus
+
+&nbsp;
+> Prometheus
+
+instance_cpu_time_ns{app="lion", proc="web", rev="34d0f99", env="prod", job="cluster-manager"}
+instance_cpu_time_ns{app="elephant", proc="worker", rev="34d0f99", env="prod", job="cluster-manager"}
+instance_cpu_time_ns{app="turtle", proc="api", rev="4d3a513", env="prod", job="cluster-manager"}
+instance_cpu_time_ns{app="fox", proc="widget", rev="4d3a513", env="prod", job="cluster-manager"}
 
 ---
 
-time series databases
-----------------------------------------------------
 
-A Time Series DBMS is a database management system that is optimized for handling time series data: each entry is associated with a timestamp.
-
-InfluxDB and Prometheus are by design single node. CAP
-
-
----
 
 Vanity Metrics vs. Actionable Metrics
 -----------------------------------------------------
 
-Vanity metrics? Good to feel awesome. Bad for insights.
+> Vanity metrics? Good to feel awesome. Bad for insights.
 
 * number of Hits
 * number of Downloads 
+* number of Likes
+* number of (insert anything here)
 
+&nbsp;
+&nbsp;
 
 (source: Eric Ries)
 
@@ -131,7 +139,7 @@ Correlation of events from various systems
 Q / A
 ----------------------------------------------
 
-How are you measuring 
+How are you measuring success? 
 
 
 ---
