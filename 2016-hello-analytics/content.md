@@ -84,10 +84,12 @@ multi-dimensional data
 &nbsp;
 > InfluDB
 
+~~~~
 h2o_feet,location=coyote_creek water_level=8.120,level\ description="between 6 and 9 feet" 1439856000
 h2o_feet,location=coyote_creek water_level=8.005,level\ description="between 6 and 9 feet" 1439856360
 h2o_feet,location=coyote_creek water_level=7.887,level\ description="between 6 and 9 feet" 1439856720
 h2o_feet,location=coyote_creek water_level=7.762,level\ description="between 6 and 9 feet" 1439857080
+~~~~
 
 ---
 
@@ -99,10 +101,12 @@ multi-dimensional data
 &nbsp;
 > Prometheus
 
+~~~~
 instance_cpu_time_ns{app="lion", proc="web", rev="34d0f99", env="prod", job="cluster-manager"}
 instance_cpu_time_ns{app="elephant", proc="worker", rev="34d0f99", env="prod", job="cluster-manager"}
 instance_cpu_time_ns{app="turtle", proc="api", rev="4d3a513", env="prod", job="cluster-manager"}
 instance_cpu_time_ns{app="fox", proc="widget", rev="4d3a513", env="prod", job="cluster-manager"}
+~~~~
 
 ---
 
